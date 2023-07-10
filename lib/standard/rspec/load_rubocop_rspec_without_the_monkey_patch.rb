@@ -29,8 +29,6 @@ require require_path.join("rubocop/rspec/wording")
 # Dependent on `RuboCop::RSpec::Language::NodePattern`.
 require require_path.join("rubocop/rspec/language")
 
-require require_path.join("rubocop/rspec/factory_bot/language")
-
 require require_path.join("rubocop/cop/rspec/mixin/final_end_location")
 require require_path.join("rubocop/cop/rspec/mixin/inside_example_group")
 require require_path.join("rubocop/cop/rspec/mixin/location_help")
@@ -50,7 +48,6 @@ require require_path.join("rubocop/rspec/concept")
 require require_path.join("rubocop/rspec/corrector/move_node")
 require require_path.join("rubocop/rspec/example")
 require require_path.join("rubocop/rspec/example_group")
-require require_path.join("rubocop/rspec/factory_bot")
 require require_path.join("rubocop/rspec/hook")
 
 # RuboCop::RSpec::Inject.defaults!
