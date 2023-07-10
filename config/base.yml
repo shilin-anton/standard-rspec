@@ -720,7 +720,7 @@ RSpec/VariableName:
   SupportedStyles:
     - snake_case
     - camelCase
-  IgnoredPatterns: []
+  AllowedPatterns: []
   VersionAdded: '1.40'
   VersionChanged: '1.43'
   StyleGuide: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/VariableName
