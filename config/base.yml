@@ -776,7 +776,6 @@ Capybara/VisibilityMatcher:
 FactoryBot:
   Enabled: true
   Include: *1
-  Language: *2
 
 FactoryBot/AttributeDefinedStatically:
   Description: Always declare attribute values as blocks.
