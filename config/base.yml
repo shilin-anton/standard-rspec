@@ -751,7 +751,7 @@ RSpec/Capybara:
   Include: *1
   Language: *2
 
-RSpec/Capybara/CurrentPathExpectation:
+Capybara/CurrentPathExpectation:
   Description: Checks that no expectations are set on Capybara's `current_path`.
   Enabled: true
   VersionAdded: '1.18'
@@ -766,7 +766,7 @@ RSpec/Capybara/FeatureMethods:
   VersionChanged: '2.0'
   StyleGuide: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Capybara/FeatureMethods
 
-RSpec/Capybara/VisibilityMatcher:
+Capybara/VisibilityMatcher:
   Description: Checks for boolean visibility in capybara finders.
   Enabled: true
   VersionAdded: '1.39'
@@ -778,7 +778,7 @@ RSpec/FactoryBot:
   Include: *1
   Language: *2
 
-RSpec/FactoryBot/AttributeDefinedStatically:
+FactoryBot/AttributeDefinedStatically:
   Description: Always declare attribute values as blocks.
   Enabled: true
   Include:
