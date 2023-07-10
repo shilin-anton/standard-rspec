@@ -3,10 +3,6 @@ require "yaml"
 module Standard
   module Rspec
     class Plugin < LintRoller::Plugin
-      def initialize(config)
-        @config = config
-      end
-
       def about
         LintRoller::About.new(
           name: "standard-rspec",
@@ -26,19 +22,11 @@ module Standard
         LintRoller::Rules.new(
           type: :object,
           config_format: :rubocop,
-          value: rules_with_config_applied
+          value: YAML.load_file(Pathname.new(__dir__).join("../../../config/base.yml"), aliases: true)
         )
       end
 
       private
-
-      def rules_with_config_applied
-        YAML.load_file(Pathname.new(__dir__).join("../../../config/base.yml")).tap do |rules|
-          if @config.key?("target_rails_version")
-            rules["AllCops"]["TargetRailsVersion"] = @config["target_rails_version"]
-          end
-        end
-      end
 
       # This is not fantastic.
       #

@@ -2,6 +2,7 @@
 
 require "bundler/gem_tasks"
 require "rake/testtask"
+require "rubocop-rspec"
 
 Rake::TestTask.new(:test) do |t|
   t.libs << "test"
@@ -10,7 +11,6 @@ Rake::TestTask.new(:test) do |t|
 end
 
 task :copy_rubocop_rspec_entry_point_and_comment_out_monkey_patch do
-  byebug
   gem_spec = Gem.loaded_specs["rubocop-rspec"]
   gem_require_path = Pathname.new(gem_spec.full_require_paths.first)
   entry_point_contents = File.read(gem_require_path.join("rubocop-rspec.rb"))
