@@ -789,7 +789,7 @@ RSpec/FactoryBot/AttributeDefinedStatically:
   VersionChanged: '2.0'
   StyleGuide: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/AttributeDefinedStatically
 
-RSpec/FactoryBot/CreateList:
+FactoryBot/CreateList:
   Description: Checks for create_list usage.
   Enabled: true
   Include:
@@ -806,7 +806,7 @@ RSpec/FactoryBot/CreateList:
   VersionChanged: '2.0'
   StyleGuide: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/CreateList
 
-RSpec/FactoryBot/FactoryClassName:
+FactoryBot/FactoryClassName:
   Description: Use string value when setting the class attribute explicitly.
   Enabled: true
   Include:
@@ -817,7 +817,7 @@ RSpec/FactoryBot/FactoryClassName:
   VersionChanged: '2.0'
   StyleGuide: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/FactoryClassName
 
-RSpec/FactoryBot/SyntaxMethods:
+FactoryBot/SyntaxMethods:
   Description: Use shorthands from `FactoryBot::Syntax::Methods` in your specs.
   Enabled: pending
   SafeAutoCorrect: false
