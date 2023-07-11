@@ -11,3 +11,7 @@
 ## [0.2.0] - 2023-07-11
 
 - Add action-policy support
+
+## [0.2.1] - 2023-07-11
+
+- Remove action-policy support, due to old rubocop version
