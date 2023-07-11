@@ -3,6 +3,10 @@ require "yaml"
 module Standard
   module Rspec
     class Plugin < LintRoller::Plugin
+      def initialize(config)
+        @config = config
+      end
+
       def about
         LintRoller::About.new(
           name: "standard-rspec",
@@ -22,11 +26,19 @@ module Standard
         LintRoller::Rules.new(
           type: :object,
           config_format: :rubocop,
-          value: YAML.load_file(Pathname.new(__dir__).join("../../../config/base.yml"), aliases: true)
+          value: rules_with_config_applied
         )
       end
 
       private
+
+      def rules_with_config_applied
+        YAML.load_file(Pathname.new(__dir__).join("../../../config/base.yml"), aliases: true).tap do |rules|
+          if @config["action_policy_enabled"]
+            rules["inherit_gem"] = { "action_policy" => "config/rubocop-rspec.yml" }
+          end
+        end
+      end
 
       # This is not fantastic.
       #
