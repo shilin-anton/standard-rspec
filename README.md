@@ -14,13 +14,6 @@ plugins:
   - standard-rspec
 ```
 
-If you are using [action-policy](https://github.com/palkan/action_policy), you could specify it, and `action-policy/rspec` rules will be applied:
-```
-plugins:
-  - standard-rspec
-    action_policy_enabled: true       # default: false
-```
-
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
