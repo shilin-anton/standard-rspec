@@ -5,7 +5,7 @@
 #
 # Because there are both necessary require statements and additional patching
 # of RuboCop built-in cops in this file, we need to monitor it for changes
-# in rubocop-rails and keep it up to date.
+# in rubocop-rspec and keep it up to date.
 #
 # Last updated from rubocop-rspec v2.22.0
 
