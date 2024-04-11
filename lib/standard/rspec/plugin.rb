@@ -19,10 +19,16 @@ module Standard
       def rules(context)
         trick_rubocop_into_thinking_we_required_rubocop_rspec!
 
+        rules_value = begin
+          YAML.load_file(Pathname.new(__dir__).join("../../../config/base.yml"), aliases: true)
+        rescue ArgumentError
+          YAML.load_file(Pathname.new(__dir__).join("../../../config/base.yml"))
+        end
+
         LintRoller::Rules.new(
           type: :object,
           config_format: :rubocop,
-          value: YAML.load_file(Pathname.new(__dir__).join("../../../config/base.yml"), aliases: true)
+          value: rules_value
         )
       end
 
