@@ -1045,19 +1045,19 @@ RSpec/Yield:
 Capybara:
   Enabled: true
 
-Capybara/CurrentPathExpectation:
+Capybara/RSpec/CurrentPathExpectation:
   Description: Checks that no expectations are set on Capybara's `current_path`.
   Enabled: true
   VersionAdded: '1.18'
   VersionChanged: '2.0'
-  StyleGuide: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/Capybara/CurrentPathExpectation
+  StyleGuide: https://www.rubydoc.info/gems/rubocop-capybara/RuboCop/Cop/Capybara/RSpec/CurrentPathExpectation
 
-Capybara/VisibilityMatcher:
+Capybara/RSpec/VisibilityMatcher:
   Description: Checks for boolean visibility in capybara finders.
   Enabled: true
   VersionAdded: '1.39'
   VersionChanged: '2.0'
-  StyleGuide: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/Capybara/VisibilityMatcher
+  StyleGuide: https://www.rubydoc.info/gems/rubocop-capybara/RuboCop/Cop/Capybara/RSpec/VisibilityMatcher
 
 FactoryBot:
   Enabled: true
