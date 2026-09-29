@@ -1129,3 +1129,16 @@ RSpecRails/HttpStatus:
   VersionAdded: '1.23'
   VersionChanged: '2.0'
   StyleGuide: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpecRails/HttpStatus
+
+RSpecRails/NegationBeValid:
+  Description: Enforces use of `be_invalid` or `not_to` for negated be_valid.
+  AutoCorrect: contextual
+  Safe: false
+  EnforcedStyle: not_to
+  SupportedStyles:
+    - not_to
+    - be_invalid
+  Enabled: pending
+  VersionAdded: '2.23'
+  VersionChanged: '2.29'
+  Reference: https://www.rubydoc.info/gems/rubocop-rspec_rails/RuboCop/Cop/RSpecRails/NegationBeValid
